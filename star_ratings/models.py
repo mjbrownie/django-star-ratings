@@ -4,7 +4,7 @@ from warnings import warn
 from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.db import models
-from django.contrib.contenttypes.fields import GenericForeignKey
+from .compat import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.db.models import Avg, Count, Sum
 from django.utils.encoding import python_2_unicode_compatible

@@ -1,6 +1,7 @@
 from django.core.exceptions import ValidationError
 from django.contrib.contenttypes.models import ContentType
-from django.http import HttpResponseRedirect, JsonResponse
+from django.http import HttpResponseRedirect
+from .compat import JsonResponse
 from django.views.generic import View
 from braces.views import LoginRequiredMixin
 from .models import Rating
